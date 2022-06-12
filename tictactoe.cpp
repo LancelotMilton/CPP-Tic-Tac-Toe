@@ -28,6 +28,7 @@ void nobat(){
         std::cout<<"\n "<<name2<<"'s [O] turn : ";
     }
     std::cin>>chs;
+	std::cin.ignore();
 
 	
   	switch(chs){
@@ -80,10 +81,10 @@ int main()
 {
 	std::cout<<"\t\t\tWelcome to the Tic Tac Toe game (A.K.A XO) By Alireza Shojaei\n";
 	std::cout<<"Player #1 Please introduce youself\nwhat is your name?\n";
-     std::cin>>name1;
+    std::getline(std::cin,name1);
     std::cout<<"Hello "<<name1<<", And Welcome\n\n";
 	std::cout<<"And What about you Player #2? Why won't you introduce yourself as well?\nWhat is your name?\n\n"; 
-	 std::cin>>name2;    
+	 std::getline(std::cin,name2);    
 	  std::cout<<"greetings "<<name2<<" And nice to meet you. ^_^\n So shall we begin, then?";
 while(gameover()){
         namayesh();
