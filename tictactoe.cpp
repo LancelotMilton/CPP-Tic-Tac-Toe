@@ -1,6 +1,5 @@
 #include <iostream>
 #include <string>
-
 //I think I'm a lazy programmer sometimes...
 
 char safhe[3][3]={{'1','2','3'},{'4','5','6'},{'7','8','9'}};
@@ -28,7 +27,7 @@ void nobat(){
         std::cout<<"\n "<<name2<<"'s [O] turn : ";
     }
     std::cin>>chs;
-	std::cin.ignore();
+    std::cin.clear();
 
 	
   	switch(chs){
