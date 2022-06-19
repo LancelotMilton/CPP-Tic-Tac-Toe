@@ -28,6 +28,7 @@ void nobat(){
     }
     std::cin>>chs;
     std::cin.clear();
+	std::cin.ignore();
 
 	
   	switch(chs){
